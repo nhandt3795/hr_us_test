@@ -34,19 +34,17 @@ module.exports = defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'Project 1',
-      testDir: './tests/feature1',
+      name: 'Project_1',
       use: {},
     },
 
     {
-      name: 'Project 2',
-      testDir: './tests/feature2',
+      name: 'Project_2',
       use: {},
     },
 
     {
-      name: 'Project 3',
+      name: 'Project_3',
       use: {},
     }
   ],
