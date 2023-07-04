@@ -11,6 +11,7 @@ const { defineConfig, devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
+  // testMatch: ['feature2/testcase1.spec.js', 'features1/testcase2.spec.js'],
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
@@ -35,17 +36,23 @@ module.exports = defineConfig({
   projects: [
     {
       name: 'Project_1',
-      use: {},
+      use: {
+        baseURL:"project1.test.com"
+      },
     },
 
     {
       name: 'Project_2',
-      use: {},
+      use: {
+        baseURL:"project2.test.com"
+      },
     },
 
     {
       name: 'Project_3',
-      use: {},
+      use: {
+        baseURL:"project3.test.com"
+      },
     }
   ],
 });
